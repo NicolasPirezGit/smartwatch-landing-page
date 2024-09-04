@@ -1,7 +1,30 @@
-node_modules/
+# OS-generated files
+.DS_Store
+Thumbs.db
 
+# Logs
 *.log
 
-.DS_Store
-
+# Temporary files
 *.tmp
+*.temp
+
+# IDE specific files
+.idea/
+.vscode/
+*.sublime-workspace
+*.sublime-project
+
+# MacOS specific files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows specific files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux specific files
+*~
+.nfs*
