@@ -48,7 +48,43 @@
             </nav>
         </header>
 
-        <main></main>
+        <main class="site-hero">
+
+            <section class="main-hero-elements">
+                <figure class="hero-image">
+                    <img class="smartwatch-cover" id="smartwatchImg" src="./images/hero.png" alt="Silver T20 smartwatch" draggable="false">
+                </figure>
+
+                <h1 class="header hero-title">An AI-powered smartwatch designed to transform your everyday life.</h1>
+
+                <form class="preorder-form">
+                    <h2 class="header preorder-title">Pre-Order the T-20 Series</h2>
+
+                    <label for="userFirstName">First name:</label>
+                    <input type="text" name="userFirstName" id="userFirstName" required>
+
+                    <label for="userLastName">Last name:</label>
+                    <input type="text" name="userLastName" id="userLastName" required>
+
+                    <label for="userEmail">Email Address:</label>
+                    <input type="email" name="userEmail" id="userEmail" required>
+
+                    <label for="productDropdown">Series:</label>
+                    <select name="productDropdown" class="dropdown-menu" id="productDropdown" required>
+                        <option class="product-series" id="basicProduct" value="basicWatch">T-20</option>
+                        <option class="product-series" id="proProduct" value="proWatch">T-20 Pro</option>
+                        <option class="product-series" id="ultraProduct" value="ultraWatch">T-20 Ultra</option>
+                    </select>
+
+                    <input class="btn submit-btn" type="submit" value="Pre-Order">
+                </form>
+            </section>
+                
+
+            <section class="catch-phrase">
+                <h2 class="header" id="catchPhrase">Science may set limits to knowledge, but should not set limits to imagination ~ Bertrand Russell.</h2>
+            </section>          
+        </main>
 
         <section></section>
 
