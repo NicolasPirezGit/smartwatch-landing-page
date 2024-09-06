@@ -29,5 +29,8 @@ Desktop.ini
 *~
 .nfs*
 
-"/images/hero bluprint.png"
-"/images/author hero.png"
+#Author of hero image
+/images/author-hero.png
+
+#Blueprint for hero image
+./images/hero-blueprint.png

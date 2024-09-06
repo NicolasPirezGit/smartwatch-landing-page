@@ -1,3 +1,5 @@
+
+/*Desktop Layout*/
 body {
     width: 100%;
     height: 100vh;
@@ -41,13 +43,17 @@ li {
     flex-grow: 3;
 }
 
-.brand-logo {
+.brand-name {
     display: inline;
     align-self: center;
     font-family: Kanit, sans-serif;
     font-size: 40px;
     text-decoration: none;
     margin-left: 1em;
+}
+
+.logo-link {
+    display: none;
 }
 
 .site-navbar {
@@ -74,6 +80,10 @@ li {
     transition: background-color 0.2s ease;
 }
 
+.login-link {
+    display: none;
+}
+
 .nav-item a:hover {
     padding-top: 3px;
     border-bottom: 3px solid;
@@ -83,4 +93,35 @@ li {
 
 .login-button:hover {
     background-color: #0246d9;
+}
+
+
+
+
+/*Mobile Layout*/
+@media (max-width: 750px) {
+
+    .brand-name, .login-button, .home-link {
+        display: none;
+    }
+
+    .logo-link, .login-link {
+        display: flex;
+    }
+
+    .site-header {
+        font-size: 0.8rem;
+    }
+
+    .brand-block {
+        flex-grow: 0;
+    }
+
+    .logo-link {
+        padding-left: 0.5em;
+    }
+
+    .brand-logo {
+        width: 60px;
+    }
 }
