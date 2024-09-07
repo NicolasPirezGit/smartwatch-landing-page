@@ -6,8 +6,11 @@ body {
     margin: 0;
     padding: 0;
     font-family: Poppins, sans-serif;
-    font-size: 0.97rem;
     background-color: #ebebeb;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
 }
 
 a, .login-button, .brandLogo {
@@ -25,6 +28,13 @@ ul {
 
 li {
     list-style-type: none;
+}
+
+.btn {
+    padding: 10px 10px 8px 10px;
+    font-family: Poppins, sans-serif;
+    font-weight: 600;
+    cursor: pointer;
 }
 
 .site-header {
@@ -94,6 +104,119 @@ li {
 .login-button:hover {
     background-color: #0246d9;
 }
+
+.site-hero {
+    display: flex;
+    flex-flow: column;
+    position: relative;
+}
+
+.main-hero-elements {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 1em;
+    position: absolute;
+    bottom: 20%;
+    left: 67%;
+}
+
+.hero-banner {
+    margin: 0;
+    padding: 0;
+}
+
+.smartwatch-cover {
+    width: 100%;
+    height: 600px;
+}
+
+.product-series, .preorder-inputs {
+    font-family: "Poppins", sans-serif;
+}
+
+.preorder-inputs, .dropdown-menu {
+    width: 350px;
+    height: 30px;
+    font-size: 16px;
+}
+
+.preorder-inputs, .dropdown-menu {
+    background-color: #2a2a2a;
+    color: #ffffff;
+    border: 2px solid #4a4a4a;
+}
+
+.preorder-form {
+    width: 500px;
+    height: 450px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5%;
+    color: #ffffff;
+    background-color: #363636;
+}
+
+.user-data-container {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.preorder-labels {
+    align-self: flex-start;
+}
+
+.preorder-inputs {
+    margin-bottom: 10px;
+}
+
+.dropdown-menu {
+    height: 35px;
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.main-header {
+    font-family: "Rubik", sans-serif;
+}
+
+.hero-title {
+    font-size: 50px;
+    color: #ffffff;
+}
+
+.submit-btn {
+    width: 20em;
+    padding: 10px 10px 8px 10px;
+    background-color: #ffcc00;
+    border: none;
+    font-size: 1.1rem;
+}
+
+.catch-phrase {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    background-color: #dcdcdc;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.quote-header {
+    color: #1a1a1a;
+}
+
+.preorder-inputs:focus, .dropdown-menu:focus {
+    outline: 2px solid #ffcc00;
+}
+
+
 
 
 

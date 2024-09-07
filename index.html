@@ -16,6 +16,11 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+
         <link rel="stylesheet" href="./styles.css">
     </head>
 
@@ -45,7 +50,7 @@
                         <a class="services-link" href="#">SERVICES</a>
                     </li>
                     <li class="nav-item log-in">
-                        <button class="login-button">LOG IN</button>
+                        <button class="btn login-button">LOG IN</button>
                         <a class="login-link" href="#">LOG IN</a>
                     </li>
                 </ul>
@@ -53,38 +58,41 @@
         </header>
 
         <main class="site-hero">
-            <section class="main-hero-elements">
-                <figure class="hero-image">
-                    <img class="smartwatch-cover" id="smartwatchImg" src="./images/hero.png" alt="Silver T20 smartwatch" draggable="false">
-                </figure>
+            <figure class="hero-banner"></figure>
+                <img class="smartwatch-cover" id="smartwatchImg" src="./images/hero.png" alt="Silver T20 smartwatch" draggable="false">
+            </figure>
 
-                <h1 class="header hero-title">An AI-powered smartwatch designed to transform your everyday life.</h1>
+            <section class="main-hero-elements">
+                <h1 class="main-header hero-title">An AI-Powered Device</h1>
 
                 <form class="preorder-form">
-                    <h2 class="header preorder-title">Pre-Order the T-20 Series</h2>
+                    <h2 class="main-header preorder-title">Pre-Order the T-20 Series</h2>
 
-                    <label for="userFirstName">First name:</label>
-                    <input type="text" name="userFirstName" id="userFirstName" required>
+                    <div class="user-data-container">
+                        <label class="preorder-labels" for="userFirstName">First name:</label>
+                        <input type="text" name="userFirstName" class="preorder-inputs" id="userFirstName" required>
 
-                    <label for="userLastName">Last name:</label>
-                    <input type="text" name="userLastName" id="userLastName" required>
+                        <label class="preorder-labels" for="userLastName">Last name:</label>
+                        <input type="text" name="userLastName" class="preorder-inputs" id="userLastName" required>
 
-                    <label for="userEmail">Email Address:</label>
-                    <input type="email" name="userEmail" id="userEmail" required>
+                        <label class="preorder-labels" for="userEmail">Email Address:</label>
+                        <input type="email" name="userEmail" class="preorder-inputs" id="userEmail" required>
 
-                    <label for="productDropdown">Series:</label>
-                    <select name="productDropdown" class="dropdown-menu" id="productDropdown" required>
-                        <option class="product-series" id="basicProduct" value="basicWatch">T-20</option>
-                        <option class="product-series" id="proProduct" value="proWatch">T-20 Pro</option>
-                        <option class="product-series" id="ultraProduct" value="ultraWatch">T-20 Ultra</option>
-                    </select>
+                        <label class="preorder-labels" for="productDropdown">Series:</label>
+                        <select name="productDropdown" class="dropdown-menu" id="productDropdown" required>
+                            <option class="product-series" id="basicProduct" value="basicWatch">T-20</option>
+                            <option class="product-series" id="proProduct" value="proWatch">T-20 Pro</option>
+                            <option class="product-series" id="ultraProduct" value="ultraWatch">T-20 Ultra</option>
+                        </select>
+                    </div>
+                    
 
                     <input class="btn submit-btn" type="submit" value="Pre-Order">
                 </form>
             </section>   
 
             <section class="catch-phrase">
-                <h2 class="header" id="catchPhrase">Science may set limits to knowledge, but should not set limits to imagination ~ Bertrand Russell.</h2>
+                <h2 class="header quote-header" id="heroQuote">Science may set limits to knowledge, but should not set limits to imagination ~ Bertrand Russell.</h2>
             </section>          
         </main>
 
