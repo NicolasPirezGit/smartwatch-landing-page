@@ -37,17 +37,36 @@ li {
     cursor: pointer;
 }
 
+.logo-link, .login-link, .hero-overlay, .preorder-btn {
+    display: none;
+}
+
+.site-header, .brand-block, .nav-items-list, .site-hero, 
+.main-hero-elements, .hero-banner, .preorder-form,
+.user-data-container, .catch-phrase {
+    display: flex;
+}
+
+.site-hero, .hero-banner, .catch-phrase {
+    position: relative;
+}
+
+.main-hero-elements, .hero-overlay, .preorder-btn, 
+.catch-phrase::after {
+    position: absolute;
+}
+
+
+/*NAV SECTION*/
 .site-header {
     width: 100%;
     height: 74px;
-    display: flex;
     flex-flow: row wrap;
     background-color: #363636;
 }
 
 .brand-block {
     height: 100%;
-    display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
     flex-grow: 3;
@@ -57,13 +76,9 @@ li {
     display: inline;
     align-self: center;
     font-family: Kanit, sans-serif;
-    font-size: 40px;
+    font-size: 2.5rem;
     text-decoration: none;
     margin-left: 1em;
-}
-
-.logo-link {
-    display: none;
 }
 
 .site-navbar {
@@ -72,7 +87,6 @@ li {
 
 .nav-items-list {
     height: 100%;
-    display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
     align-items: center;
@@ -80,7 +94,6 @@ li {
 
 .login-button {
     width: 7em;
-    padding: 10px 10px 8px 10px;
     border: none;
     border-radius: 6%;
     cursor: pointer;
@@ -88,10 +101,6 @@ li {
     font-weight: 600;
     background-color: #0551f5;
     transition: background-color 0.2s ease;
-}
-
-.login-link {
-    display: none;
 }
 
 .nav-item a:hover {
@@ -105,33 +114,56 @@ li {
     background-color: #0246d9;
 }
 
-.site-hero {
-    display: flex;
-    flex-flow: column;
-    position: relative;
+
+/*HERO SECTION*/
+.product-series, .preorder-inputs {
+    font-family: "Poppins", sans-serif;
 }
 
-.hero-overlay {
-    display: none;
+.preorder-inputs, .dropdown-menu {
+    width: 350px;
+    height: 30px;
+    font-size: 1rem;
+}
+
+.preorder-inputs, .dropdown-menu {
+    background-color: #2a2a2a;
+    color: #ffffff;
+    border: 2px solid #4a4a4a;
+}
+
+.site-hero {
+    flex-flow: column;
 }
 
 .main-hero-elements {
-    display: flex;
+    height: 100%;
+    width: 100%; 
     flex-flow: column nowrap;
     justify-content: flex-start;
     align-items: flex-end;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 2.5em;
+    gap: 10px;
+    top: 2em;
     right: 3em;
 }
 
 .hero-banner {
     height: 600px;
-    position: relative;
+    flex-flow: column nowrap;
     margin: 0;
     padding: 0;
+}
+
+.hero-overlay {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: flex-end;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(20, 20, 20, 0.3);
 }
 
 .smartwatch-cover {
@@ -141,36 +173,34 @@ li {
     object-position: 100%;
 }
 
-.product-series, .preorder-inputs {
-    font-family: "Poppins", sans-serif;
-}
-
-.preorder-inputs, .dropdown-menu {
-    width: 350px;
-    height: 30px;
-    font-size: 16px;
-}
-
-.preorder-inputs, .dropdown-menu {
-    background-color: #2a2a2a;
-    color: #ffffff;
-    border: 2px solid #4a4a4a;
+.preorder-btn {
+    height: 60px;
+    width: 200px;
+    margin-bottom: 5em;
+    margin-right: 1em;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 6px;
+    border: none;
+    border-bottom: 3px solid #b8860b;
+    background: linear-gradient(to top right, #ffcc00, #ffaa33, #ff6600);
+    background-size: 180% 180%;
+    animation: hero-btn-animation 5s ease infinite;
 }
 
 .preorder-form {
     width: 500px;
     height: 450px;
-    display: flex;
     flex-flow: column wrap;
     align-items: center;
     justify-content: space-evenly;
+    margin-right: 1.2em;
     border-radius: 5%;
     color: #ffffff;
     background-color: #363636;
 }
 
 .user-data-container {
-    display: flex;
     flex-flow: column wrap;
     align-items: center;
 }
@@ -186,7 +216,7 @@ li {
 .dropdown-menu {
     height: 35px;
     font-family: Poppins, sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     cursor: pointer;
 }
 
@@ -195,27 +225,26 @@ li {
 }
 
 .hero-title {
-    font-size: 50px;
+    font-size: 3.125rem;
     color: #ffffff;
 }
 
 .submit-btn {
     width: 20em;
     padding: 10px 10px 8px 10px;
-    background-color: #ffcc00;
-    border: none;
     font-size: 1.1rem;
+    border: none;
+    border-radius: 6px;
+    background-color: #ffcc00;
 }
 
 .catch-phrase {
     height: 100px;
-    display: flex;
-    flex-flow: column nowrap;
+    flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    position: relative;
     font-style: italic;
-    font-size: 1.5em;
+    font-size: 1.3vw;
     background-color: #dcdcdc;
 }
 
@@ -231,43 +260,34 @@ li {
     content: "";
     width: 100%;
     height: 3px;
-    position: absolute;
     bottom: 0px;
     background: linear-gradient(to right, rgba(111, 111, 111, 0), rgba(111, 111, 111, 0.6), rgba(111, 111, 111, 0));
 }
 
 
-
+/*Laptop Layout*/
 @media (min-width: 1250px) and (max-width: 1614px) {
-    .preorder-btn {
-        display: none;
-    }
-    
     .smartwatch-cover {
         object-position: 100%;
     }
 }
 
+/*Tablet Layout*/
 @media (min-width: 750px) and (max-width: 1249px) {
-    /*Resume here. Make image and form move at the same ratio.*/
-    .smartwatch-cover {
-        object-position: 100%;
-    }
-
     .hero-overlay {
-        width: 100%;
-        height: 100%;
         display: flex;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-color: rgba(20, 20, 20, 0.3);
     }
 
     .preorder-btn {
+        display: block;
+    }
+
+    .main-hero-elements {
         display: none;
+    }
+    
+    .smartwatch-cover {
+        object-position: 48%;
     }
 }
 
@@ -278,7 +298,7 @@ li {
         display: none;
     }
 
-    .logo-link, .login-link {
+    .logo-link, .login-link, .hero-overlay {
         display: flex;
     }
 
@@ -302,23 +322,27 @@ li {
         width: 60px;
     }
 
+    .preorder-btn {
+        display: block;
+        margin-right: 0em;
+    }
+
     .smartwatch-cover {
         object-position: 48%;
     }
+}
 
-    .hero-overlay {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        background-color: rgba(20, 20, 20, 0.3);
+/*Animation Keyframes*/
+@keyframes hero-btn-animation {
+    0% {
+      background-position: 0% 50%;
     }
 
-    .preorder-btn {
-        display: none;
+    50% {
+      background-position: 100% 50%;
+    }
+
+    100% {
+      background-position: 0% 50%;
     }
 }
