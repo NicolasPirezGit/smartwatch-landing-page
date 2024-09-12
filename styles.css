@@ -263,6 +263,38 @@ li {
     background: linear-gradient(to right, rgba(111, 111, 111, 0), rgba(111, 111, 111, 0.6), rgba(111, 111, 111, 0));
 }
 
+.fade-rule {
+    height: 1px;
+    background-color: #E6E6E6;
+    width: 66.0em;
+    margin: 0 auto;
+    background-image: linear-gradient(left , white 2%, #E6E6E6 50%, white 98%);
+}
+/*.product-overview {
+    display: flex;
+    position: relative;
+}
+
+.background-design {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.central-illustration {
+    z-index: 1;
+}
+
+.central-img {
+    width: 37.5em;
+    height: 37.5em;
+    max-width: 37.5em;
+    object-fit: cover;
+    object-position: 75%;
+    border-radius: 50%;
+}*/
+
+
 /*Laptop Layout*/
 @media (min-width: 1250px) and (max-width: 1614px) {
     .smartwatch-cover {
