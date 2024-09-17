@@ -269,8 +269,6 @@ li {
 }
 
 .main-overview-container {
-    max-width: 1920px;
-    width: 100%;
     margin: 0 auto;
     padding: 0 3em;
 }
@@ -295,6 +293,8 @@ li {
 
 .quote {
     font-style: italic;
+    border-left: 4px solid #4A6B82;
+    padding-left: 1em;
 }
 
 .central-img {
@@ -307,19 +307,29 @@ li {
 }
 
 .overview-card {
+    width: 260px;
+    height: 300px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
-    width: 260px;
-    height: 280px;
-    line-height: 150%;
     padding: 0px 30px 0px 40px;
-    border-radius: 12px;
-    box-shadow: 8px 10px 25px rgba(0, 0, 0, 0.8);
-    color: #FFFFFF;
-    background-color:#363636;
-    margin-bottom: 10px;
+    border-radius: 10px;
+    line-height: 1.6;
+    color: #E0E0E0;
+    background: linear-gradient(to bottom right, #424242, #5A5A5A, #333333);
+    box-shadow: 10px 12px 5px rgba(0, 0, 0, 0.8);
+    margin-bottom: 40px;
 }
+
+.card-content {
+    font-size: 1rem;
+}
+
+.card-title {
+    font-size: 1.4rem;
+}
+
+
 
 
 /*Laptop Layout*/
