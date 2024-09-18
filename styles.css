@@ -263,6 +263,7 @@ li {
     background: linear-gradient(to right, rgba(111, 111, 111, 0), rgba(111, 111, 111, 0.6), rgba(111, 111, 111, 0));
 }
 
+/*OVERVIEW SECTION*/
 .history-title, .overview-title {
     font-family: "Merriweather", serif;
     font-size: 1.7rem;
@@ -283,9 +284,17 @@ li {
 }
 
 .background-design {
-    position: absolute;
     width: 100%;
-    z-index: -1;
+    display: block;
+    object-fit: cover;
+}
+
+.layered-peaks-desktop {
+    height: 300px;
+}
+
+.layered-peaks-laptop, .layered-peaks-tablet, .layered-peaks-mobile {
+    display: none;
 }
 
 .product-history {
@@ -370,8 +379,12 @@ li {
         object-position: 100%;
     }
 
-    .background-design {
+    .layered-peaks-desktop {
         display: none;
+    }
+
+    .layered-peaks-laptop {
+        display: block;
     }
 
     .product-history {
@@ -394,6 +407,10 @@ li {
 
 /*Tablet Layout*/
 @media (min-width: 750px) and (max-width: 1249px) {
+    .layered-peaks-desktop, .layered-peaks-laptop {
+        display: none;
+    }
+
     .hero-overlay {
         display: flex;
     }
@@ -410,14 +427,35 @@ li {
         object-position: 48%;
     }
 
-    .background-design {
+    .main-overview-container {
+        height: 100%;
+        flex-flow: column nowrap;
+    }
+
+    .layered-peaks-tablet {
+        display: block;
+    }
+
+    .product-history {
         display: none;
+    }
+
+    .central-img-container {
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 600px;
+    }
+
+    .overview-title {
+        display: block;
+        font-size: 2rem;
     }
 }
 
 /*Mobile Layout*/
 @media (min-width: 360px) and (max-width: 749px) {
-
     .brand-name, .login-button, .home-link {
         display: none;
     }
@@ -427,6 +465,10 @@ li {
     }
 
     .main-hero-elements, .catch-phrase {
+        display: none;
+    }
+
+    .layered-peaks-desktop, .layered-peaks-laptop, .layered-peaks-tablet {
         display: none;
     }
 
@@ -453,6 +495,10 @@ li {
 
     .smartwatch-cover {
         object-position: 48%;
+    }
+
+    .layered-peaks-mobile {
+        display: block;
     }
 }
 
