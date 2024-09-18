@@ -450,7 +450,7 @@ li {
 
     .overview-title {
         display: block;
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 }
 
@@ -468,7 +468,7 @@ li {
         display: none;
     }
 
-    .layered-peaks-desktop, .layered-peaks-laptop, .layered-peaks-tablet {
+    .layered-peaks-desktop, .layered-peaks-laptop, .layered-peaks-tablet, .product-history, .central-img {
         display: none;
     }
 
@@ -497,9 +497,27 @@ li {
         object-position: 48%;
     }
 
+    .overview-features {
+        display: flex;
+        flex-flow: column;
+    }
+
+    .main-overview-container {
+        height: 100%;
+        flex-flow: column nowrap;
+        margin-top: 2em;
+        gap: 2em;
+    }
+
+    .overview-title {
+        display: block;
+        font-size: 2rem;
+    }
+
     .layered-peaks-mobile {
         display: block;
     }
+
 }
 
 /*Animation Keyframes*/
