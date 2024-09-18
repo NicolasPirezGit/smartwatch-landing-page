@@ -302,6 +302,10 @@ li {
     padding-left: 1em;
 }
 
+.overview-title {
+    display: none;
+}
+
 .central-img {
     width: 28.5em;
     height: 28.5em;
@@ -331,7 +335,7 @@ li {
     color: #E0E0E0;
     background: linear-gradient(to bottom right, #424242, #5A5A5A, #333333);
     box-shadow: 10px 12px 5px rgba(0, 0, 0, 0.8);
-    transition: transform 0.5s ease;
+    transition: transform 0.3s ease;
     overflow: hidden;
     cursor: pointer;
 }
@@ -357,16 +361,34 @@ li {
 }
 
 .overview-card:hover {
-    transform: scale(1.05);
+    transform: scale(1.08);
 }
-
-
-
 
 /*Laptop Layout*/
 @media (min-width: 1250px) and (max-width: 1614px) {
     .smartwatch-cover {
         object-position: 100%;
+    }
+
+    .background-design {
+        display: none;
+    }
+
+    .product-history {
+        display: none;
+    }
+
+    .central-img-container {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        gap: 2em;
+    }
+
+    .overview-title {
+        display: block;
+        font-size: 2.5rem;
+        font-family: "Rubik";
     }
 }
 
@@ -386,6 +408,10 @@ li {
     
     .smartwatch-cover {
         object-position: 48%;
+    }
+
+    .background-design {
+        display: none;
     }
 }
 
