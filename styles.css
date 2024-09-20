@@ -405,6 +405,20 @@ li {
     }
 }
 
+/*SERIES SECTION*/
+
+.series-cover {
+    display: none;
+}
+
+.card-title-icon {
+    width: 50px;
+}
+
+.card-icon {
+    width: 30px;
+}
+
 /*Tablet Layout*/
 @media (min-width: 750px) and (max-width: 1249px) {
     .layered-peaks-desktop, .layered-peaks-laptop {
