@@ -341,7 +341,7 @@ li {
     padding: 0px 30px 0px 40px;
     border-radius: 10px;
     line-height: 1.6;
-    color: #E0E0E0;
+    color: #e0e0e0;
     background: linear-gradient(to bottom right, #424242, #5A5A5A, #333333);
     box-shadow: 10px 12px 5px rgba(0, 0, 0, 0.8);
     transition: transform 0.3s ease;
@@ -363,6 +363,7 @@ li {
 
 .card-logo {
     width: 30px;
+    fill: #e0e0e0;
 }
 
 .card-content {
@@ -390,7 +391,7 @@ li {
     font-size: 0.9rem;
 }
 
-.series-main-container > .series-card:last-child > .card-icon {
+.series-main-container > .series-card:last-child .card-icon {
     fill: #ffffff;
 }
 
@@ -398,8 +399,25 @@ li {
     color: rgba(240, 240, 240, 1);
 }
 
+.series-card, .series-cover {
+    border-radius: 12px;
+}
+
+.series-card:hover > .series-content, 
+.series-title, .series-description, .series-pricing {
+    position: relative;
+    z-index: 1;
+}
+
+.series-cover, .series-card::after, 
+.series-card:hover > .series-cover, 
+.series-card:hover::after {
+    transition: opacity 0.5s ease;
+}
+
 .series-main-container {
     width: 90%;
+    position: relative;
 }
 
 .series-main-heading {
@@ -409,12 +427,15 @@ li {
 .series-card {
     width: 300px;
     height: 550px;
+    position: relative;
     padding: 20px 20px 0px 20px;
-    border-radius: 12px;
     font-family: "Open Sans", sans-serif;
     font-weight: 300;
     outline: 1px solid #d6d6d6;
     background-color: #f8f9fa;
+    overflow: hidden;
+    transform: scale(1.0);
+    transition: transform 0.5s ease;
 }
 
 .series-heading {
@@ -458,7 +479,16 @@ li {
 }
 
 .series-cover {
-    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(2px);
+    opacity: 0;
 }
 
 .card-title-icon {
@@ -488,6 +518,47 @@ li {
 .failure {
     fill: #a8b0c3;
 }
+
+.series-card:hover {
+    transform: scale(1.1);
+    transition: transform 0.5s ease;
+}
+
+
+
+.series-card::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.series-card:hover > .series-cover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 0;
+    object-fit: cover;
+    filter: blur(2px);
+    visibility: visible;
+    opacity: 1;
+}
+
+.series-card:hover::after {
+    opacity: 1;
+}
+
 
 
 
