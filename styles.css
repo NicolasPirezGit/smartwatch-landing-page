@@ -382,7 +382,7 @@ li {
     color: #a8b0c3;
 }
 
-.series-main-container > .series-card:last-child {
+.pricing-cards > .series-card:last-child {
     color: #ffffff;
     background-color: #1769ff;
 }
@@ -391,7 +391,7 @@ li {
     font-size: 0.9rem;
 }
 
-.series-main-container > .series-card:last-child .card-icon {
+.pricing-cards > .series-card:last-child .card-icon {
     fill: #ffffff;
 }
 
@@ -415,27 +415,59 @@ li {
     transition: opacity 0.5s ease;
 }
 
+.product-series {
+    width: 100%;
+    height: 830px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
 .series-main-container {
     width: 90%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 3em;
     position: relative;
 }
 
 .series-main-heading {
     font-size: 2.6rem;
+    text-decoration: underline;
+}
+
+.pricing-cards {
+    width: 90%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 3em;
 }
 
 .series-card {
     width: 300px;
     height: 550px;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1em;
     position: relative;
     padding: 20px 20px 0px 20px;
     font-family: "Open Sans", sans-serif;
     font-weight: 300;
-    outline: 1px solid #d6d6d6;
-    background-color: #f8f9fa;
     overflow: hidden;
     transform: scale(1.0);
     transition: transform 0.5s ease;
+    cursor: default;
+    outline: 1px solid #d6d6d6;
+    background-color: #f8f9fa;
+}
+
+.series-title {
+    display: flex;
+    align-items: center;
+    gap: 0.6em;
 }
 
 .series-heading {
@@ -452,15 +484,28 @@ li {
     font-weight: 500;
 }
 
+.series-list {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.3em;
+}
+
 .series-list-item {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 0.5em;
     font-weight: 400;
 }
 
 .series-preorder-btn {
     width: 90%;
+    align-self: center;
     padding: 12px 0px 12px 0px;
     border: none;
     border-radius: 6px;
+    margin-top: 2em;
+    z-index: 1;
 }
 
 .standard-btn {
@@ -486,6 +531,7 @@ li {
     right: 0;
     width: 100%;
     height: 100%;
+    z-index: 0;
     object-fit: cover;
     filter: blur(2px);
     opacity: 0;
@@ -524,8 +570,6 @@ li {
     transition: transform 0.5s ease;
 }
 
-
-
 .series-card::after {
     content: '';
     width: 100%;
@@ -541,18 +585,9 @@ li {
 }
 
 .series-card:hover > .series-cover {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 0;
-    object-fit: cover;
-    filter: blur(2px);
     visibility: visible;
     opacity: 1;
+    filter: blur(2px);
 }
 
 .series-card:hover::after {
