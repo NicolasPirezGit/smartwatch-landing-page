@@ -346,7 +346,7 @@ li {
     box-shadow: 10px 12px 5px rgba(0, 0, 0, 0.8);
     transition: transform 0.3s ease;
     overflow: hidden;
-    cursor: pointer;
+    cursor: default;
 }
 
 .card-title {
@@ -425,7 +425,7 @@ li {
 }
 
 .series-main-container {
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -439,7 +439,7 @@ li {
 }
 
 .pricing-cards {
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
@@ -451,6 +451,7 @@ li {
     height: 550px;
     display: flex;
     flex-flow: column nowrap;
+    align-items: stretch;
     gap: 1em;
     position: relative;
     padding: 20px 20px 0px 20px;
@@ -466,6 +467,7 @@ li {
 
 .series-title {
     display: flex;
+    justify-content: flex-start;
     align-items: center;
     gap: 0.6em;
 }
@@ -475,6 +477,14 @@ li {
     font-weight: 400;
 }
 
+.best-offer-btn {
+    border-radius: 20px;
+    border: 2px solid rgba(255, 193, 7, 0.5);;
+    background-color: transparent;
+    margin: auto;
+    font-weight: 500;
+}
+
 .series-description {
     color: #5d6370;
 }
@@ -482,6 +492,10 @@ li {
 .series-pricing {
     font-size: 2.5rem;
     font-weight: 500;
+}
+
+.series-content {
+    height: 197.75px;
 }
 
 .series-list {
@@ -539,6 +553,7 @@ li {
 
 .card-title-icon {
     width: 50px;
+    height: 50px;
 }
 
 .card-icon {
@@ -593,9 +608,6 @@ li {
 .series-card:hover::after {
     opacity: 1;
 }
-
-
-
 
 
 
