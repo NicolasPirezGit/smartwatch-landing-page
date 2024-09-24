@@ -698,6 +698,11 @@ li {
         font-size: 2.5rem;
     }
 
+    .series-card:nth-child(2) > .series-description,
+    .series-card:nth-child(1) > .series-description {
+        color: #333333;
+    }
+
     .pricing-cards {
         height: 600px;
         flex-flow: row wrap;
@@ -726,10 +731,7 @@ li {
         z-index: -1;
     }
 
-    .series-card:nth-child(2) > .series-description,
-    .series-card:nth-child(1) > .series-description {
-        color: #333333;
-    }
+    
     
 }
 
@@ -795,6 +797,42 @@ li {
 
     .layered-peaks-mobile {
         display: block;
+    }
+
+    .series-card:nth-child(2) > .series-description,
+    .series-card:nth-child(1) > .series-description {
+        color: #333333;
+    }
+
+    .series-main-heading {
+        font-size: 2.0rem;
+    }
+
+    .pricing-cards {
+        height: 600px;
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .series-card::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 1;
+        transition: opacity 0.5s ease;
+        background-color: rgba(255, 255, 255, 0.3);
+        z-index: -1;
+    }
+
+    .series-cover {
+        visibility: visible;
+        opacity: 1;
+        z-index: -1;
     }
 
 }
