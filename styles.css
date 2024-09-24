@@ -613,6 +613,10 @@ li {
 
 /*Laptop Layout*/
 @media (min-width: 1250px) and (max-width: 1614px) {
+    .layered-peaks-top.layered-peaks-laptop {
+        height: 150px;
+    }
+    
     .smartwatch-cover {
         object-position: 100%;
     }
@@ -623,6 +627,10 @@ li {
 
     .layered-peaks-laptop {
         display: block;
+    }
+
+    .layered-peaks-top {
+        margin-top: -10px;
     }
 
     .product-history {
