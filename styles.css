@@ -5,7 +5,7 @@ body {
     height: 100vh;
     margin: 0;
     padding: 0;
-    font-family: Poppins, sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6, p, blockquote, figure {
@@ -31,7 +31,7 @@ li {
 
 .btn {
     padding: 10px 10px 8px 10px;
-    font-family: Poppins, sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
     cursor: pointer;
 }
@@ -610,6 +610,49 @@ li {
 
 .series-card:hover::after {
     opacity: 1;
+}
+
+
+/*FOOTER SECTION*/
+
+.site-footer {
+    font-size: 14px;
+    background-color: #333333;
+    color: #E0E0E0;
+}
+
+.footer-brand {
+    font-size: 3.5rem;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+}
+
+.business-description {
+    width: 500px;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+.info-title {
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.footer-link {
+    text-decoration: underline;
+    color: #E0E0E0;
+}
+
+.footer-legal {
+    background-color: #FFC4A3;
+    color: #4E5C77;
+}
+
+.footer-icon {
+    width: 18px;
+    height: 18px;
+    fill:#4E5C77;
 }
 
 
