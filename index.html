@@ -35,7 +35,7 @@
 
         <header class="site-header">
             <div class="brand-block">
-                <a class="brand-name" href="index.html">SmartWatch</a>
+                <a class="nav-link brand-name" href="index.html">SmartWatch</a>
                 
                 <a class="logo-link" href="index.html">
                     <img class="brand-logo" src="./icons/pulse.svg" alt="A pulse, representing PulseTech">
@@ -45,20 +45,20 @@
             <nav class="site-navbar">
                 <ul class="nav-items-list">
                     <li class="nav-item home">
-                        <a class="home-link" href="#">HOME</a>
+                        <a class="nav-link home-link" href="#">HOME</a>
                     </li>
                     <li class="nav-item story">
-                        <a class="story-link" href="#">STORY</a>
+                        <a class="nav-link story-link" href="#">STORY</a>
                     </li>
                     <li class="nav-item products">
-                        <a class="products-link" href="#">PRODUCTS</a>
+                        <a class="nav-link products-link" href="#">PRODUCTS</a>
                     </li>
                     <li class="nav-item services">
-                        <a class="services-link" href="#">SERVICES</a>
+                        <a class="nav-link services-link" href="#">SERVICES</a>
                     </li>
                     <li class="nav-item log-in">
                         <button class="btn login-button">LOG IN</button>
-                        <a class="login-link" href="#">LOG IN</a>
+                        <a class="nav-link login-link" href="#">LOG IN</a>
                     </li>
                 </ul>
             </nav>
@@ -123,7 +123,7 @@
     
                 <figure class="central-img-container">
                     <h2 class="overview-title">Product Overview</h2>
-                    <img src="./images/description-img-medium.jpg" class="central-img" width="600px" alt="A black T-20 with a black screen and yellow features inside it">
+                    <img src="./images/overview-img-medium.jpg" class="central-img" width="600px" alt="A black T-20 with a black screen and yellow features inside it">
                 </figure>
     
                 <section class="overview-features">
@@ -334,10 +334,95 @@
                     </div>
                 </div>
             </div>
-                
         </section>
 
-        <footer class="site-footer"></footer>
+
+
+
+        <footer class="site-footer">
+            <div class="footer-cover-container">
+                <img src="./images/footer-cover.jpg" class="footer-cover-img" width="800" height="475" alt="Geometric pattern with overlapping red, peach, and white diamond shapes on a dark background">
+
+                <h3 class="footer-brand">SmartWatch</h3>
+
+                <p class="business-description">SmartWatch is a company dedicated to delivering the best smartwatches, combining cutting-edge technology with sleek, modern designs. We have been at the forefront of wearable tech, offering devices that seamlessly integrate with daily life. From fitness tracking to advanced notifications, SmartWatch products are crafted with precision to meet the highest standards of performance and style.</p>   
+            </div>
+
+            <div class="footer-info">
+                <div class="main-info-container">
+                    <div class="info-section company-links">
+                        <h5 class="company-links-title">Website Links</h5>
+
+                        <ul class="company-list">
+                            <li class="company-list-item"><a href="#link" class="footer-link pages-links">Story</a></li>
+                            <li class="company-list-item"><a href="#link" class="footer-link pages-links">Products</a></li>
+                            <li class="company-list-item"><a href="#link" class="footer-link pages-links">Services</a></li>
+                            <li class="company-list-item"><a href="#link" class="footer-link pages-links">About us</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="info-section social-links">
+                        <h5 class="social-title">Follow Us</h5>
+
+                        <ul class="social-list">
+                            <li class="social-list-item">
+                                <!--Facebook SVG-->
+                                <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+                            </li>
+
+                            <li class="social-list-item">
+                                <!--Instagram SVG-->
+                                <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+                            </li>
+
+                            <li class="social-list-item">
+                                <!--Linkedin SVG-->
+                                <a href="https://www.linkedin.com/" target="_blank">Linkedin</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <address class="info-section contact-section">
+                        <h5 class="contact-title">Address</h5>
+
+                        <ul class="contact-list">
+                            <li class="contact-list-item">
+                                <!--Address marker SVG-->
+                                1234 Innovation Blvd, Suite 500 - Tech City, CA 90210
+                            </li>
+
+                            <li class="contact-list-item">
+                                <!--Phone SVG-->
+                                Phone: (555) 123-4567
+                            </li>
+
+                            <li class="contact-list-item">
+                                <!--Letter SVG-->
+                                Email: contact@smartwatchcompany.com
+                            </li>
+                        </ul>
+                    </address>
+
+                    <div class="info-section contributors-section">
+                        <h5 class="contributors-title">Acknowledgements</h5>
+
+                        <ul class="contributors-list">
+                            <li class="contrib-list-item"><cite class="contrib-author">Rajasekhar R. on <a href="https://unsplash.com/" class="footer-link contrib-link" target="_blank">Unsplash</a></cite> - Hero Cover Photo</li>
+                            <li class="contrib-list-item"><cite class="contrib-author">Emiliano Cicero on <a href="https://unsplash.com/" class="footer-link contrib-link" target="_blank">Unsplash</a></cite> - Product Overview Photo</li>
+                            <li class="contrib-list-item"><cite class="contrib-author">Rachit Tank on <a href="https://unsplash.com/" class="footer-link contrib-link" target="_blank">Unsplash</a></cite> - T-20 Pricing Card Photo</li>
+                            <li class="contrib-list-item"><cite class="contrib-author">Lloyd Dirks on <a href="https://unsplash.com/" class="footer-link contrib-link" target="_blank">Unsplash</a></cite> - T-20 Pro Pricing Card Photo</li>
+                            <li class="contrib-list-item"><cite class="contrib-author">Jeremy Beadle on <a href="https://unsplash.com/" class="footer-link contrib-link" target="_blank">Unsplash</a></cite> - T-20 Ultra Pricing Card Photo</li>
+                            <li class="contrib-list-item"><cite class="contrib-author">Joel Naren on <a href="https://unsplash.com/" class="footer-link contrib-link" target="_blank">Unsplash</a></cite> - Footer Cover Photo</li>
+                            <li class="contrib-list-item"><cite class="contrib-author"><a href="https://fontawesome.com/" class="footer-link contrib-link" target="_blank">Font Awesome</a></cite> - All SVG Icons</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-legal">
+                <p class="legal-description">&copy; 2024 SmartWatch Inc. All rights reserved.</p>
+            </div>
+        </footer>
 
         <script src="./index.js"></script>
     </body>
