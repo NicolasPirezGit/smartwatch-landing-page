@@ -864,8 +864,25 @@ li {
         z-index: -1;
     }
 
+    .footer-cover-container {
+        display: none;
+    }
+
+    .footer-info {
+        height: 350px;
+        grid-column: span 2;
+    }
     
-    
+}
+
+@media (min-width: 750px) and (max-width: 1115px) {
+    .product-series {
+        height: 1450px;
+    }
+
+    .contributors-section {
+        display: none;
+    }
 }
 
 /*Mobile Layout*/
